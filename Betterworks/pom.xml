@@ -4,9 +4,10 @@
     <artifactId>Betterworks</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
     </properties>
     <dependencies>
         <dependency>
@@ -60,9 +61,16 @@
             <artifactId>cucumber-testng</artifactId>
             <version>7.15.0</version>
         </dependency>
+        <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.30</version>
+    <scope>provided</scope>
+</dependency>
 
 
     </dependencies>
+    
     <build>
         <plugins>
             <plugin>
@@ -71,8 +79,8 @@
                 <version>3.12.1</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -87,6 +95,11 @@
                     <useUnlimitedThreads>false</useUnlimitedThreads>
                 </configuration>
             </plugin>
+            
+           
+
+
+
 <!--            <plugin>-->
 <!--                <groupId>org.apache.maven.plugins</groupId>-->
 <!--                <artifactId>maven-failsafe-plugin</artifactId>-->
